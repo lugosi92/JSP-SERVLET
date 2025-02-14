@@ -10,7 +10,8 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
-  
+
+<!-- CONFIG, MISMO SERVLET -->
 <servlet>
 	<servlet-name>PaqueteServlets.ConsultaServlet</servlet-name>
 	<servlet-class>PaqueteServlets.ConsultaServlet</servlet-class>
@@ -28,6 +29,7 @@
 		</init-param>
 </servlet>
 
+<!-- CONTEXT, EN TODA LA APLICACION -->
 <context-param>
 	<param-name>URLBaseDeDatos</param-name>
 	<param-value>jdbc:mysql://localhost/TiendaLibros</param-value>

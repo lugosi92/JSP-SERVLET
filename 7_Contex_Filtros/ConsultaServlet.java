@@ -43,8 +43,8 @@ public class ConsultaServlet extends HttpServlet {
 
     
     
-    public void init(ServletConfig config) throws ServletException {
-		super.init(config);
+    public void init(ServletContext config) throws ServletException {
+		super.init(config); //Siemore cofig
 		
 		 // Obtener parámetros de inicialización específicos del servlet
 	    userName = config.getInitParameter("usuario");

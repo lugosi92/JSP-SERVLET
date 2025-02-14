@@ -145,8 +145,12 @@ protected Boolean mayorDeEdad(String _fechaNac) {
             request.getSession().setAttribute("errorGeneral", errorGeneral);
 
 
-			 response.sendRedirect("formulario.jsp");
+			response.sendRedirect("formulario.jsp");
 
+
+			HttpSession laSesion = request.getSession();
+
+			laSesion.setAttribute("nombre", nombre);
 
 
 
